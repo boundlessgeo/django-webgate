@@ -78,5 +78,5 @@ class OracleAccessManagerMiddleware(RemoteUserMiddleware):
     subclass of the RemoteUserMiddleware. The header value is configurable
     by setting a django setting of WEBGATE_HEADER.
     """
-    header = getattr(settings, 'WEBGATE_HEADER', 'HTTP_OAM_REMOTE_USER')
+    header = getattr(settings, 'WEBGATE_HEADER', 'OAM_REMOTE_USER')
     force_logout_if_no_header = False
